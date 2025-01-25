@@ -1,0 +1,63 @@
+.muzic-container {
+    background-color: #111;
+    color: #00ffcc;
+    font-family: 'Press Start 2P', cursive;
+    padding: 3rem;
+    min-height: 100vh;
+    width: 197vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    text-shadow: 0px 0px 10px #00ffcc;
+  }
+  
+  .mood-selector {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  button {
+    background-color: #00ffcc;
+    color: black;
+    padding: 10px 20px;
+    border: 2px solid #00ffcc;
+    cursor: pointer;
+    font-family: 'Press Start 2P', cursive;
+  }
+  
+  button:hover {
+    background-color: #ff00ff;
+    color: white;
+  }
+  
+  .mood-songs {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 1200px;
+  }
+  
+  .mood-songs h3 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  .mood-songs ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .mood-songs li {
+    background-color: #222;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 6px;
+    box-shadow: 0px 0px 5px #ff00ff;
+  }
+  

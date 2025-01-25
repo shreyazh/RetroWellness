@@ -1,7 +1,7 @@
 # RetroWellness 🕹️  
 **Hackathon Project | Hack the Future: AI & Open Source Hackathon**  
 
-RetroMental is a mental health-focused web application designed with a nostalgic retro theme. It aims to support users in managing their mental well-being through personalized plans, interactive tools, and community support, all while bringing a fun and engaging user experience.
+RetroWellness is a mental health-focused web application designed with a nostalgic retro theme. It aims to support users in managing their mental well-being through personalized plans, interactive tools, and community support, all while bringing a fun and engaging user experience.
 
 ---
 
@@ -56,8 +56,8 @@ RetroMental is a mental health-focused web application designed with a nostalgic
 
 1. **Clone the Repository**  
    ```bash
-   git clone https://github.com/your-repo/RetroMental.git
-   cd RetroMental
+   git clone https://github.com/shreyazh/RetroWellness.git
+   cd RetroWellness
    ```
 
 2. **Install Dependencies**  
@@ -105,10 +105,8 @@ We welcome contributions from the community! Here's how you can contribute:
 4. Push your branch: `git push origin feature-name`.  
 5. Submit a pull request.  
 
-
 ---
 
 ## 📜 License  
 
 This project is licensed under the MIT License. See `LICENSE` for more details.
-
