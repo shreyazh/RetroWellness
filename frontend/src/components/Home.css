@@ -1,0 +1,65 @@
+.landing-page {
+    background: #111;
+    color: #00ffcc;
+    font-family: "Press Start 2P", cursive;
+    padding: 2rem;
+    text-align: center;
+    min-height: 100vh;
+    width: 200vh;
+    margin: 0 auto;  
+  }
+  
+  .welcome-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    text-shadow: 0px 0px 10px #00ffcc;
+  }
+  
+  .categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+  
+  .card {
+    background: #222;
+    border: 2px solid #00ffcc;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: left;
+    box-shadow: 0px 0px 15px #00ffcc;
+  }
+  
+  .card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    text-shadow: 0px 0px 5px #ff00ff;
+  }
+  
+  .card ul {
+    list-style: square;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .card ul li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .retro-btn {
+    background: #00ffcc;
+    color: black;
+    border: 2px solid #00ffcc;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease;
+    font-family: inherit;
+    font-size: 0.9rem;
+  }
+  
+  .retro-btn:hover {
+    background: #ff00ff;
+    color: white;
+  }
+  
