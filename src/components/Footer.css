@@ -9,8 +9,18 @@
     font-family: "Press Start 2P", cursive;
   }
 
+<<<<<<< HEAD
    /* Footer */
    .footer {
     padding: 15px 0.5px; /* Adjust padding */
     font-size: 0.7rem; /* Reduce font size */
   }
+=======
+
+  @media screen and (max-width: 768px) {
+  .footer {
+    padding: 15px 5px;
+    font-size: 0.9rem;
+  }
+}
+>>>>>>> d0fa5cba56b493b037b5c83f0914c5838b4d2906

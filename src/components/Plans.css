@@ -10,3 +10,9 @@
   }
   
   
+
+  @media screen and (max-width: 768px) {
+  input[type="text"], textarea {
+    width: 100%;
+  }
+}

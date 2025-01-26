@@ -33,6 +33,7 @@
     color: #ff00ff;
   }
   
+<<<<<<< HEAD
   /* Mobile-friendly styles for Header */
 @media (max-width: 768px) {
   /* Header */
@@ -62,3 +63,27 @@
     font-size: 0.9rem; /* Reduce font size for links */
   }
 }
+=======
+
+  @media screen and (max-width: 768px) {
+  .retro-header {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .logo {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+
+  .nav-links ul {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+
+  .nav-links li {
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+}
+>>>>>>> d0fa5cba56b493b037b5c83f0914c5838b4d2906

@@ -452,6 +452,7 @@
   color: white;
 }
 
+<<<<<<< HEAD
 /* Mobile-friendly styles */
 @media (max-width: 768px) {
   #root {
@@ -682,3 +683,27 @@
   }
 
 }
+=======
+
+@media screen and (max-width: 768px) {
+  #root {
+    width: 100%;
+  }
+
+  .landing-page {
+    padding: 1.5rem;
+  }
+
+  .welcome-title {
+    font-size: 2rem;
+  }
+
+  .categories {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    padding: 1rem;
+  }
+}
+>>>>>>> d0fa5cba56b493b037b5c83f0914c5838b4d2906
