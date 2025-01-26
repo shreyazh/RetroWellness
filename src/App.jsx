@@ -5,7 +5,7 @@ import Dashboard from "./Pages/Dashboard"
 import Plans from "./Pages/Plans"
 import Music from "./Pages/Music"
 import Community from "./Pages/Community"
-import Profile from "./components/Profile"
+import Profile from "./Pages/Profile"
 import Footer from "./components/Footer"
 
 function App() {
