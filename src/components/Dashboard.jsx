@@ -16,7 +16,12 @@ const Dashboard = () => {
   return (
     <div className="dashboard-container">
       <section className="overview">
-        <h2>Dashboard</h2>
+        <h2
+          className="font-size: 2rem;
+    text-shadow: 0px 0px 10px #00ffcc;"
+        >
+          Dashboard
+        </h2>
         <div className="stats">
           <div className="stat">
             <h3>{stats.tasksCompleted}</h3>
@@ -34,7 +39,12 @@ const Dashboard = () => {
       </section>
 
       <section className="recent-activities">
-        <h2>Recent Activities</h2>
+        <h2
+          className="font-size: 2rem;
+    text-shadow: 0px 0px 10px #00ffcc;"
+        >
+          Recent Activities
+        </h2>
         {recentActivities.length > 0 ? (
           recentActivities.map((activity) => (
             <div key={activity.id} className="activity">
