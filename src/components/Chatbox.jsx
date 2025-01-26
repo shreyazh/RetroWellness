@@ -20,9 +20,7 @@ const Chatbox = () => {
     "what kind of music do you play": "I can play relaxing, upbeat, or chill music based on your mood!",
     "i need some chill music": "I’ve got just the thing! Here’s some chill music for you.",
     "what is the weather like": "I can’t check the weather right now, but you can always check your favorite weather app!",
-    "tell me a joke": "Why don't skeletons fight each other? They don't have the guts!"
-    "hello": "Hello! I'm here to guide you through yoga for sports performance. What would you like to know?",
-    "hi": "Hi there! Ready to enhance your sports performance with some yoga?",
+    "tell me a joke": "Why don't skeletons fight each other? They don't have the guts!",
     "sports yoga": "Sports yoga helps improve flexibility, strength, balance, and mental focus, all of which are essential for better performance in sports.",
     "warm-up": "A good warm-up for sports yoga includes dynamic stretches like leg swings, arm circles, and lunges. It helps increase blood flow and flexibility.",
     "cool-down": "For a cooldown, poses like Forward Fold, Seated Twist, and Supine Hamstring Stretch can help relax the body and reduce muscle tension.",
@@ -80,8 +78,7 @@ const Chatbox = () => {
     "warm-up": "A good warm-up for sports yoga includes dynamic stretches like leg swings, arm circles, and lunges. It helps increase blood flow and flexibility.",
     "poses": "Some essential yoga poses for athletes are Downward Dog, Child's Pose, Warrior, and Cobra. These stretches help enhance flexibility, strength, and balance.",
     "breathing": "Breathing exercises such as diaphragmatic breathing and Ujjayi pranayama are perfect for athletes. They help with relaxation and performance.",
-    "cooldown": "For a cooldown, poses like Forward Fold, Seated Twist, and Supine Hamstring Stretch can help relax the body and reduce muscle tension.",
-    "default": "I'm sorry, I didn't understand that. Could you ask something else related to sports yoga?"
+    "cooldown": "For a cooldown, poses like Forward Fold, Seated Twist, and Supine Hamstring Stretch can help relax the body and reduce muscle tension."
   };
 
   const handleSendMessage = () => {
