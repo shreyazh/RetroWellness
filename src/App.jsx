@@ -1,11 +1,11 @@
 import { Route, Routes } from "react-router-dom"
 import Header from "./components/Header"
-import Home from "./Pages/Home"
-import Dashboard from "./Pages/Dashboard"
-import Plans from "./Pages/Plans"
-import Music from "./Pages/Music"
-import Community from "./Pages/Community"
-import Profile from "./Pages/Profile"
+import Home from "./components/Home"
+import Dashboard from "./components/Dashboard"
+import Plans from "./components/Plans"
+import Music from "./components/Music"
+import Community from "./components/Community"
+import Profile from "./components/Profile"
 import Footer from "./components/Footer"
 
 function App() {

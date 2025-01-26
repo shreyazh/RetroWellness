@@ -1,4 +1,3 @@
-import "./Dashboard.css";
 
 const Dashboard = () => {
   const stats = {

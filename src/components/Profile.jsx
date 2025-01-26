@@ -1,5 +1,4 @@
 import { useState } from "react";
-import "./Profile.css";
 
 const Profile = () => {
   const [formData, setFormData] = useState({

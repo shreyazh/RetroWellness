@@ -1,5 +1,4 @@
 import { useState } from "react";
-import "./Music.css";
 
 const Music = () => {
   const [mood, setMood] = useState("relaxed");

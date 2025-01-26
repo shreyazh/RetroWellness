@@ -1,5 +1,4 @@
 import { useState } from "react";
-import "./Plans.css";
 
 const Plan = () => {
   const [tasks, setTasks] = useState([
