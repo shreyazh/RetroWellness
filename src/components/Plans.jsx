@@ -1,6 +1,5 @@
 import { useState } from "react";
-import "./Plans.css";
-
+import React from "react";
 const Plan = () => {
   const [tasks, setTasks] = useState([
     { id: 1, title: "Morning Yoga", description: "Start your day with some stretches", completed: false },
@@ -34,7 +33,12 @@ const Plan = () => {
   return (
     <div className="plan-container">
       <section className="create-task">
-        <h2>Lets Plan Your Wellness Routine!</h2>
+        <h2
+          className="font-size: 2rem;
+    text-shadow: 0px 0px 10px #00ffcc;"
+        >
+          Lets Plan Your Wellness Routine!
+        </h2>
         <form onSubmit={handleTaskSubmit}>
           <div className="task-field">
             <label>Task Title:</label>
@@ -60,10 +64,18 @@ const Plan = () => {
       </section>
 
       <section className="task-list">
-        <h2>Your Wellness Tasks</h2>
+        <h2
+          className="font-size: 2rem;
+    text-shadow: 0px 0px 10px #00ffcc;"
+        >
+          Your Wellness Tasks
+        </h2>
         {tasks.length > 0 ? (
-          tasks.map(task => (
-            <div key={task.id} className={`task ${task.completed ? "completed" : ""}`}>
+          tasks.map((task) => (
+            <div
+              key={task.id}
+              className={`task ${task.completed ? "completed" : ""}`}
+            >
               <h3>{task.title}</h3>
               <p>{task.description}</p>
               <button onClick={() => handleTaskCompletion(task.id)}>

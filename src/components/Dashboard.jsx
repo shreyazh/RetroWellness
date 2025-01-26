@@ -1,4 +1,4 @@
-import "./Dashboard.css";
+import React from "react";
 
 const Dashboard = () => {
   const stats = {
@@ -36,7 +36,7 @@ const Dashboard = () => {
       <section className="recent-activities">
         <h2>Recent Activities</h2>
         {recentActivities.length > 0 ? (
-          recentActivities.map(activity => (
+          recentActivities.map((activity) => (
             <div key={activity.id} className="activity">
               <h4>{activity.title}</h4>
               <p>{activity.date}</p>

@@ -1,6 +1,5 @@
 import { useState } from "react";
-import "./Profile.css";
-
+import React from "react";
 const Profile = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -40,7 +39,12 @@ const Profile = () => {
   return (
     <div className="profile-container">
       <section className="personal-info">
-        <h2>Personal Information</h2>
+        <h2
+          className="font-size: 2rem;
+  text-shadow: 0px 0px 10px #00ffcc;"
+        >
+          Personal Information
+        </h2>
         <div className="info-field">
           <label>Name:</label>
           <input

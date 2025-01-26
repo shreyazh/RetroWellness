@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./Community.css";
+import React from "react";
 
 const Community = () => {
   const [posts, setPosts] = useState([

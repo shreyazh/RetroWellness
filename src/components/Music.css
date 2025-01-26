@@ -1,0 +1,23 @@
+
+  
+  h2 {
+   
+  }
+  
+  
+  
+  button {
+    background-color: #00ffcc;
+    color: black;
+    padding: 10px 20px;
+    border: 2px solid #00ffcc;
+    cursor: pointer;
+    font-family: 'Press Start 2P', cursive;
+  }
+  
+  button:hover {
+    background-color: #ff00ff;
+    color: white;
+  }
+  
+  

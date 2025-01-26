@@ -1,6 +1,5 @@
 import { useState } from "react";
-import "./Music.css";
-
+import React from "react";
 const Music = () => {
   const [mood, setMood] = useState("relaxed");
 
@@ -12,7 +11,12 @@ const Music = () => {
 
   return (
     <div className="muzic-container">
-      <h2>Pick Your Mood and Lets Groove</h2>
+      <h2
+        className=" font-size: 2rem;
+    text-shadow: 0px 0px 10px #00ffcc;"
+      >
+        Pick Your Mood and Lets Groove
+      </h2>
       <div className="mood-selector">
         <button onClick={() => setMood("relaxed")}>Relaxed</button>
         <button onClick={() => setMood("energetic")}>Energetic</button>

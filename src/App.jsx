@@ -12,17 +12,17 @@ function App() {
   return (
     <>
       <Header />
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/dashboard" element={<Dashboard />} />
-      <Route path="/plans" element={<Plans />} />
-      <Route path="/music" element={<Music />} />
-      <Route path="/community" element={<Community />} />
-      <Route path="/profile" element={<Profile />} />
-    </Routes>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/plans" element={<Plans />} />
+        <Route path="/music" element={<Music />} />
+        <Route path="/community" element={<Community />} />
+        <Route path="/profile" element={<Profile />} />
+      </Routes>
       <Footer />
     </>
-  )
+  );
 }
 
 export default App
