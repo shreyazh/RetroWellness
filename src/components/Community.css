@@ -1,62 +1,10 @@
-.community-container {
-  background-color: #111;
-  color: #00ffcc;
-  font-family: 'Press Start 2P', cursive;
-  padding: 3rem;
-  min-height: 100vh;
-  width: 197vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+
 
 h2 {
   font-size: 2rem;
   text-shadow: 0px 0px 10px #00ffcc;
 }
 
-.post-card {
-  background-color: #222;
-  color: #00ffcc;
-  padding: 15px;
-  margin: 10px 0;
-  border-radius: 10px;
-  box-shadow: 0px 0px 10px #ff00ff;
-  width: 100%;
-  max-width: 900px;
-}
-
-.post-card h3 {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-  text-shadow: 0px 0px 5px #ff00ff;
-}
-
-.post-card p {
-  font-size: 1rem;
-}
-
-.create-post {
-  background-color: #222;
-  border: 2px solid #00ffcc;
-  padding: 20px;
-  margin-top: 20px;
-  border-radius: 10px;
-  width: 100%;
-  max-width: 900px;
-  box-shadow: 0px 0px 10px #ff00ff;
-}
-
-.create-post h3 {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-  text-shadow: 0px 0px 5px #ff00ff;
-}
-
-.create-post label {
-  font-size: 1.2rem;
-  margin-top: 10px;
-}
 
 input[type="text"], textarea {
   width: 100%;
@@ -67,18 +15,3 @@ input[type="text"], textarea {
   color: #00ffcc;
 }
 
-.submit-post-button {
-  background-color: #00ffcc;
-  color: black;
-  padding: 10px;
-  margin-top: 10px;
-  border: 2px solid #00ffcc;
-  cursor: pointer;
-  transition: background 0.3s, color 0.3s;
-  font-family: 'Press Start 2P', cursive;
-}
-
-.submit-post-button:hover {
-  background-color: #ff00ff;
-  color: white;
-}

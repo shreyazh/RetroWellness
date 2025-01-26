@@ -4,3 +4,356 @@
   padding: 2rem;
   text-align: center;
 }
+
+/* home page */
+.landing-page {
+    background: #111;
+    color: #00ffcc;
+    font-family: "Press Start 2P", cursive;
+    padding: 2rem;
+    text-align: center;
+    min-height: 100vh;
+    width: 200vh;
+    margin: 0 auto;  
+  }
+  
+  .welcome-title {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    text-shadow: 0px 0px 10px #00ffcc;
+  }
+  
+  .categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+  
+  .card {
+    background: #222;
+    border: 2px solid #00ffcc;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: left;
+    box-shadow: 0px 0px 15px #00ffcc;
+  }
+  
+  .card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    text-shadow: 0px 0px 5px #ff00ff;
+  }
+  
+  .card ul {
+    list-style: square;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .card ul li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .retro-btn {
+    background: #00ffcc;
+    color: black;
+    border: 2px solid #00ffcc;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease;
+    font-family: inherit;
+    font-size: 0.9rem;
+  }
+  
+  .retro-btn:hover {
+    background: #ff00ff;
+    color: white;
+  }
+  
+/* profile page  */
+.profile-container {
+  background-color: #111;
+  color: #00ffcc;
+  font-family: 'Press Start 2P', cursive;
+  padding: 3rem;
+  min-height: 100vh;
+  width: 197vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-info {
+  background-color: #222;
+  border: 2px solid #00ffcc;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 900px;
+  box-shadow: 0px 0px 10px #ff00ff;
+}
+
+.profile-info h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  text-shadow: 0px 0px 5px #ff00ff;
+}
+
+.profile-info p {
+  margin: 10px 0;
+  font-size: 1rem;
+}
+
+.edit-button {
+  background-color: #00ffcc;
+  color: black;
+  padding: 10px 20px;
+  border: 2px solid #00ffcc;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+  font-family: 'Press Start 2P', cursive;
+  margin-top: 20px;
+}
+
+.edit-button:hover {
+  background-color: #ff00ff;
+  color: white;
+}
+
+.preferences-form {
+  background-color: #222;
+  border: 2px solid #00ffcc;
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 900px;
+  box-shadow: 0px 0px 10px #ff00ff;
+}
+
+.preferences-form h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  text-shadow: 0px 0px 5px #ff00ff;
+}
+
+.preferences-form label {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+/* plan page */
+.plan-container {
+    font-family: 'Press Start 2P', cursive;
+    background-color: #111;
+    color: #00ffcc;
+    padding: 3rem;
+    min-height: 100vh;
+    width: 197vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  .create-task, .task-list {
+    margin: 20px 0;
+    width: 100%;
+    max-width: 1200px;
+  }
+  
+  .task-field label {
+    color: #00ffcc;
+    font-size: 1.2rem;
+  }
+  
+   .task {
+    background-color: #222;
+    color: #00ffcc;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #ff00ff;
+  }
+  
+  .completed {
+    background-color: #444;
+    text-decoration: line-through;
+  }
+  
+  /* music page  */
+  .muzic-container {
+    background-color: #111;
+    color: #00ffcc;
+    font-family: 'Press Start 2P', cursive;
+    padding: 3rem;
+    min-height: 100vh;
+    width: 197vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .mood-selector {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+  }
+
+  .mood-songs {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 1200px;
+  }
+  
+  .mood-songs h3 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  .mood-songs ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .mood-songs li {
+    background-color: #222;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 6px;
+    box-shadow: 0px 0px 5px #ff00ff;
+  }
+  
+/* community page */
+.community-container {
+  background-color: #111;
+  color: #00ffcc;
+  font-family: 'Press Start 2P', cursive;
+  padding: 3rem;
+  min-height: 100vh;
+  width: 197vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.post-card {
+  background-color: #222;
+  color: #00ffcc;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px #ff00ff;
+  width: 100%;
+  max-width: 900px;
+}
+
+.post-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  text-shadow: 0px 0px 5px #ff00ff;
+}
+
+.post-card p {
+  font-size: 1rem;
+}
+
+.create-post {
+  background-color: #222;
+  border: 2px solid #00ffcc;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 900px;
+  box-shadow: 0px 0px 10px #ff00ff;
+}
+
+.create-post h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  text-shadow: 0px 0px 5px #ff00ff;
+}
+
+.create-post label {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+.submit-post-button {
+  background-color: #00ffcc;
+  color: black;
+  padding: 10px;
+  margin-top: 10px;
+  border: 2px solid #00ffcc;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+  font-family: 'Press Start 2P', cursive;
+}
+
+.submit-post-button:hover {
+  background-color: #ff00ff;
+  color: white;
+}
+
+/* dashboard page */
+.dashboard-container {
+    background-color: #111;
+    color: #00ffcc;
+    font-family: 'Press Start 2P', cursive;
+    padding: 3rem;
+    min-height: 100vh;
+    width: 197vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .stats {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 2rem;
+  }
+  
+  .stat {
+    background-color: #222;
+    color: #00ffcc;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #ff00ff;
+    text-align: center;
+  }
+  
+  .stat h3 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .recent-activities {
+    margin-top: 30px;
+    width: 100%;
+    max-width: 1200px;
+  }
+  
+  .activity {
+    background-color: #222;
+    color: #00ffcc;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #ff00ff;
+  }
+  
+  .activity h4 {
+    font-size: 1.5rem;
+  }
+  
+  .activity p {
+    font-size: 1rem;
+  }
+  
