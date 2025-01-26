@@ -33,3 +33,25 @@
     color: #ff00ff;
   }
   
+
+  @media screen and (max-width: 768px) {
+  .retro-header {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .logo {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+
+  .nav-links ul {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+
+  .nav-links li {
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+}

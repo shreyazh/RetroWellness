@@ -29,3 +29,22 @@
     content: "";
   }
 }
+
+
+@media screen and (max-width: 768px) {
+  .chatbot-message {
+    font-size: 0.9rem;
+  }
+
+  .chatbot-message .message-text {
+    font-size: 1rem;
+  }
+
+  .chatbot-message span {
+    font-size: 0.8rem;
+  }
+
+  .chat-window {
+    height: 60vh;
+  }
+}

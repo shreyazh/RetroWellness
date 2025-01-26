@@ -87,3 +87,30 @@ body {
   font-size: 1.2rem;
   margin: 10px 0;
 }
+
+
+@media screen and (max-width: 768px) {
+  .muzic-container {
+    padding: 1.5rem;
+  }
+
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .mood-selector {
+    flex-direction: column;
+  }
+
+  .additional-options input {
+    width: 100%;
+  }
+
+  .mood-songs h2 {
+    font-size: 1.5rem;
+  }
+
+  .mood-songs li {
+    font-size: 1rem;
+  }
+}

@@ -8,3 +8,11 @@
     width: 100%;
     font-family: "Press Start 2P", cursive;
   }
+
+
+  @media screen and (max-width: 768px) {
+  .footer {
+    padding: 15px 5px;
+    font-size: 0.9rem;
+  }
+}
