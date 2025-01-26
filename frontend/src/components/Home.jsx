@@ -75,6 +75,16 @@ function Home() {
           <button className="retro-btn">Learn More</button>
           </Link>
         </div>
+        <div className="card">
+          <h3>Time Capsule</h3>
+          <ul>
+            <li>Write down personal thoughts</li>
+            <li>Come back to it later to review</li>
+          </ul>
+          <Link to="/community">
+          <button className="retro-btn">Learn More</button>
+          </Link>
+        </div>
       </div>
     </div>
   );
