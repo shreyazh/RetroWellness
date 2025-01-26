@@ -1,5 +1,8 @@
 import { useState } from "react";
 import React from "react";
+import '../App.css'
+import './Plans.css'
+
 const Plan = () => {
   const [tasks, setTasks] = useState([
     { id: 1, title: "Morning Yoga", description: "Start your day with some stretches", completed: false },

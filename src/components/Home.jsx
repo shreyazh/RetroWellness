@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import React from 'react'
+import '../App.css'
 
 function Home() {
   return (
@@ -23,16 +24,6 @@ function Home() {
           <ul>
             <li>Healthy Lifestyle Tips</li>
             <li>Yoga/Exercises</li>
-          </ul>
-          <Link to="/plans">
-          <button className="retro-btn">Learn More</button>
-          </Link>
-        </div>
-        <div className="card">
-          <h3>Interactive Tools</h3>
-          <ul>
-            <li>Mood-to-Music Generator</li>
-            <li>Time Capsule</li>
           </ul>
           <Link to="/plans">
           <button className="retro-btn">Learn More</button>

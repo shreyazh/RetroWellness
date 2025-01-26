@@ -24,6 +24,9 @@ function Header() {
           <li>
             <Link to="/profile">Profile</Link>
           </li>
+          <li>
+            <Link to="/chatbox">Chatbox</Link>
+          </li>
         </ul>
       </nav>
     </header>

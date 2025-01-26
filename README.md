@@ -28,7 +28,10 @@ RetroWellness is a mental health-focused web application designed with a nostalg
 7. **Community Forums**  
    A safe space to connect, share experiences, and support others in their mental health journeys.  
 
-8. **Retro UI**  
+8. **ChatBox**
+   A chatbox.
+
+9. **Retro UI**  
    Bringing the vibes of the past with a bold, pixel-perfect retro design!  
 
 ---
@@ -44,12 +47,12 @@ RetroWellness is a mental health-focused web application designed with a nostalg
 - **Python Flask** (For AI-powered features like the mood-to-music generator)  
 
 ### **Database**  
-- **MongoDB** (For storing user data, plans, and community forum content)  
+- **MySQL** (For storing user data, plans, and community forum content)  
 
 ### **AI/ML**  
 - **Scikit-learn**  
 - **Spotify API** (for generating music recommendations)  
-
+- **OpenAI API** (for chating with the chatbox)
 ---
 
 ## 📖 How to Run  

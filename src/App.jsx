@@ -6,6 +6,7 @@ import Plans from "./components/Plans"
 import Music from "./components/Music"
 import Community from "./components/Community"
 import Profile from "./components/Profile"
+import Chatbox from "./components/Chatbox"
 import Footer from "./components/Footer"
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
         <Route path="/music" element={<Music />} />
         <Route path="/community" element={<Community />} />
         <Route path="/profile" element={<Profile />} />
+        <Route path="/chatbox" element={<Chatbox />} />
       </Routes>
       <Footer />
     </>
