@@ -1,47 +1,56 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import React from "react";
-import '../App.css'
-import './Plans.css'
+import "../App.css";
+import "./Plans.css";
 
 const Plan = () => {
-  const [tasks, setTasks] = useState([
-    { id: 1, title: "Morning Yoga", description: "Start your day with some stretches", completed: false },
-    { id: 2, title: "Mindful Breathing", description: "Take a few moments to breathe deeply", completed: true },
-  ]);
+  // Load tasks from localStorage when the component mounts
+  const loadTasksFromLocalStorage = () => {
+    const savedTasks = localStorage.getItem("tasks");
+    return savedTasks ? JSON.parse(savedTasks) : [];
+  };
 
+  const [tasks, setTasks] = useState(loadTasksFromLocalStorage());
   const [newTask, setNewTask] = useState({ title: "", description: "" });
+
+  useEffect(() => {
+    // Save tasks to localStorage whenever tasks change
+    localStorage.setItem("tasks", JSON.stringify(tasks));
+  }, [tasks]);
 
   const handleTaskChange = (e) => {
     const { name, value } = e.target;
     setNewTask({
       ...newTask,
-      [name]: value
+      [name]: value,
     });
   };
 
   const handleTaskSubmit = (e) => {
     e.preventDefault();
     if (newTask.title && newTask.description) {
-      setTasks([...tasks, { id: Date.now(), ...newTask, completed: false }]);
+      const newTaskData = { id: Date.now(), ...newTask, completed: false };
+      setTasks([...tasks, newTaskData]);
       setNewTask({ title: "", description: "" });
     }
   };
 
   const handleTaskCompletion = (id) => {
-    setTasks(tasks.map(task =>
-      task.id === id ? { ...task, completed: !task.completed } : task
-    ));
+    setTasks(
+      tasks.map((task) =>
+        task.id === id ? { ...task, completed: !task.completed } : task
+      )
+    );
+  };
+
+  const handleTaskDelete = (id) => {
+    setTasks(tasks.filter((task) => task.id !== id));
   };
 
   return (
     <div className="plan-container">
       <section className="create-task">
-        <h2
-          className="font-size: 2rem;
-    text-shadow: 0px 0px 10px #00ffcc;"
-        >
-          Lets Plan Your Wellness Routine!
-        </h2>
+        <h2>Let's Plan Your Wellness Routine!</h2>
         <form onSubmit={handleTaskSubmit}>
           <div className="task-field">
             <label>Task Title:</label>
@@ -51,6 +60,7 @@ const Plan = () => {
               value={newTask.title}
               onChange={handleTaskChange}
               placeholder="Enter task title"
+              required
             />
           </div>
           <div className="task-field">
@@ -60,6 +70,7 @@ const Plan = () => {
               value={newTask.description}
               onChange={handleTaskChange}
               placeholder="Enter task description"
+              required
             ></textarea>
           </div>
           <button type="submit">Add Task</button>
@@ -67,12 +78,7 @@ const Plan = () => {
       </section>
 
       <section className="task-list">
-        <h2
-          className="font-size: 2rem;
-    text-shadow: 0px 0px 10px #00ffcc;"
-        >
-          Your Wellness Tasks
-        </h2>
+        <h2>Your Wellness Tasks</h2>
         {tasks.length > 0 ? (
           tasks.map((task) => (
             <div
@@ -84,6 +90,7 @@ const Plan = () => {
               <button onClick={() => handleTaskCompletion(task.id)}>
                 {task.completed ? "Done!" : "Complete Task"}
               </button>
+              <button onClick={() => handleTaskDelete(task.id)}>Delete</button>
             </div>
           ))
         ) : (

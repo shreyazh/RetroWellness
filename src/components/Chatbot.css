@@ -1,0 +1,31 @@
+/* In your App.css */
+.chatbot-message {
+  position: relative;
+}
+
+.chatbot-message .message-user {
+  font-weight: bold;
+}
+
+.chatbot-message .message-text {
+  font-style: italic;
+}
+
+/* For the typing animation */
+.chatbot-message span {
+  font-style: italic;
+  color: #888;
+  animation: typing 1s infinite steps(4);
+}
+
+@keyframes typing {
+  0% {
+    content: "…";
+  }
+  50% {
+    content: "…";
+  }
+  100% {
+    content: "";
+  }
+}
