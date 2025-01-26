@@ -3,13 +3,23 @@ import React from "react";
 
 const Community = () => {
   const [posts, setPosts] = useState([
-    { id: 1, title: "Welcome to the community!", content: "Feel free to introduce yourself!", comments: [] },
-    { id: 2, title: "Discussion on Mental Health", content: "What are some mental health practices that work for you?", comments: [] }
+    {
+      id: 1,
+      title: "Welcome to the community!",
+      content: "Feel free to introduce yourself!",
+      comments: [],
+    },
+    {
+      id: 2,
+      title: "Discussion on Mental Health",
+      content: "What are some mental health practices that work for you?",
+      comments: [],
+    },
   ]);
 
   const [newPost, setNewPost] = useState({
     title: "",
-    content: ""
+    content: "",
   });
 
   const [newComment, setNewComment] = useState("");
@@ -18,7 +28,7 @@ const Community = () => {
     const { name, value } = e.target;
     setNewPost({
       ...newPost,
-      [name]: value
+      [name]: value,
     });
   };
 
@@ -37,11 +47,13 @@ const Community = () => {
   const handleCommentSubmit = (postId, e) => {
     e.preventDefault();
     if (newComment) {
-      setPosts(posts.map(post => 
-        post.id === postId
-          ? { ...post, comments: [...post.comments, newComment] }
-          : post
-      ));
+      setPosts(
+        posts.map((post) =>
+          post.id === postId
+            ? { ...post, comments: [...post.comments, newComment] }
+            : post
+        )
+      );
       setNewComment("");
     }
   };
@@ -49,7 +61,12 @@ const Community = () => {
   return (
     <div className="community-container">
       <section className="create-post">
-        <h2>Create a New Post</h2>
+        <h2
+          className="font-size: 2rem;
+  text-shadow: 0px 0px 10px #00ffcc;"
+        >
+          Create a New Post
+        </h2>
         <form onSubmit={handlePostSubmit}>
           <div className="input-field">
             <label>Title:</label>
@@ -68,6 +85,12 @@ const Community = () => {
               value={newPost.content}
               onChange={handlePostChange}
               placeholder="Enter your content"
+              className=" w-100%;
+  p-10px;
+  m-t-10px;
+  border: 2px solid #00ffcc;
+  background-color: #222;
+  color: #00ffcc;"
             ></textarea>
           </div>
           <button type="submit">Post</button>
@@ -75,9 +98,14 @@ const Community = () => {
       </section>
 
       <section className="posts-list">
-        <h2>Community Posts</h2>
+        <h2
+          className="font-size: 2rem;
+  text-shadow: 0px 0px 10px #00ffcc;"
+        >
+          Community Posts
+        </h2>
         {posts.length > 0 ? (
-          posts.map(post => (
+          posts.map((post) => (
             <div key={post.id} className="post">
               <h3>{post.title}</h3>
               <p>{post.content}</p>
