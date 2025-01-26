@@ -8,3 +8,20 @@ input[type="text"], input[type="email"], textarea {
   color: #00ffcc;
 }
 
+@media screen and (max-width: 768px) {
+  input[type="text"], input[type="email"], textarea {
+    width: 100%;
+  }
+
+  .profile-container {
+    padding: 2rem;
+  }
+
+  .profile-info {
+    width: 100%;
+  }
+
+  .preferences-form {
+    width: 100%;
+  }
+}
