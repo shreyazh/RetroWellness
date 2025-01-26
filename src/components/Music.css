@@ -1,16 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
-  button {
-    background-color: #00ffcc;
-    color: black;
-    padding: 10px 20px;
-    border: 2px solid #00ffcc;
-    cursor: pointer;
-    font-family: 'Press Start 2P', cursive;
-  }
-  
-  button:hover {
-    background-color: #ff00ff;
-    color: white;
-  }
-  
-  
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Press Start 2P', cursive;
+  background: linear-gradient(45deg, #ff00ff, #00ffff, #ff9900);
+  background-size: 400% 400%;
+  animation: gradient-animation 8s ease infinite;
+  color: #fff;
+}
+
+@keyframes gradient-animation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.muzic-container {
+  text-align: center;
+  padding: 2rem;
+}
+
+.title {
+  font-size: 2.5rem;
+  text-shadow: 0 0 10px #00ffcc, 0 0 20px #ff00ff;
+}
+
+.mood-selector button {
+  background-color: #00ffcc;
+  color: black;
+  padding: 10px 20px;
+  margin: 5px;
+  border: 2px solid #00ffcc;
+  cursor: pointer;
+  font-family: 'Press Start 2P', cursive;
+  border-radius: 12px;
+  transition: transform 0.2s, background-color 0.3s;
+}
+
+.mood-selector button:hover {
+  background-color: #ff00ff;
+  color: white;
+  transform: scale(1.1);
+}
+
+.additional-options {
+  margin: 20px 0;
+}
+
+.additional-options select,
+.additional-options input {
+  padding: 10px;
+  margin: 5px;
+  border: 2px solid #00ffcc;
+  border-radius: 10px;
+  font-family: 'Press Start 2P', cursive;
+  outline: none;
+}
+
+.additional-options input {
+  width: 200px;
+}
+
+.additional-options button {
+  background-color: #00ffcc;
+  padding: 10px 15px;
+  font-family: 'Press Start 2P', cursive;
+  border-radius: 12px;
+}
+
+.mood-songs {
+  margin-top: 20px;
+}
+
+.mood-songs h2 {
+  font-size: 1.8rem;
+  text-shadow: 0 0 10px #ff9900;
+}
+
+.mood-songs ul {
+  list-style: none;
+  padding: 0;
+}
+
+.mood-songs li {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
