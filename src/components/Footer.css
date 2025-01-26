@@ -8,3 +8,9 @@
     width: 100%;
     font-family: "Press Start 2P", cursive;
   }
+
+   /* Footer */
+   .footer {
+    padding: 15px 0.5px; /* Adjust padding */
+    font-size: 0.7rem; /* Reduce font size */
+  }

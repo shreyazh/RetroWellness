@@ -29,7 +29,7 @@ RetroWellness is a mental health-focused web application designed with a nostalg
    A safe space to connect, share experiences, and support others in their mental health journeys.  
 
 8. **ChatBox**
-   A chatbox.
+   A chatbox to get more information and advice about health plans.
 
 9. **Retro UI**  
    Bringing the vibes of the past with a bold, pixel-perfect retro design!  

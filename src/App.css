@@ -451,3 +451,234 @@
   background-color: #ff00ff;
   color: white;
 }
+
+/* Mobile-friendly styles */
+@media (max-width: 768px) {
+  #root {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  body {
+    overflow-x: hidden; /* Hide horizontal overflow */
+  }
+
+  /* Home Page */
+  .landing-page {
+    padding: 1rem;
+  }
+
+  .welcome-title {
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
+  }
+
+  .categories {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+  }
+
+ .card {
+    width: 100%; /* Ensure cards take full width */
+    box-sizing: border-box; /* Include padding and border in width calculation */
+    word-wrap: break-word; /* Break long words to prevent overflow */
+  }
+
+  .card h3 {
+    font-size: 1rem; /* Reduce font size for headings */
+  }
+
+  .card ul {
+    padding-left: 1rem; /* Adjust padding for lists */
+  }
+
+  .card ul li {
+    font-size: 0.9rem; /* Reduce font size for list items */
+  }
+
+  .retro-btn {
+    padding: 0.5rem;
+    font-size: 0.8rem;
+  }
+
+  /* Profile Page */
+  .profile-container {
+    padding: 1rem;
+    width: 100%;
+  }
+
+  .profile-info {
+    padding: 10px;
+    margin: 10px 0;
+  }
+
+  .profile-info h3 {
+    font-size: 1.2rem;
+  }
+
+  .profile-info p {
+    font-size: 0.9rem;
+  }
+
+  .edit-button {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+
+  .preferences-form {
+    padding: 10px;
+  }
+
+  .preferences-form h3 {
+    font-size: 1.2rem;
+  }
+
+  .preferences-form label {
+    font-size: 1rem;
+  }
+
+  /* Plan Page */
+  .plan-container {
+    width: 100%; /* Ensure container takes full width */
+    padding: 0.1rem; /* Reduce padding */
+  }
+
+  .create-task, .task-list {
+    width: 100%; /* Ensure task sections take full width */
+  }
+
+  .task {
+    width: 95%; /* Ensure task cards take full width */
+    box-sizing: border-box; /* Include padding and border in width calculation */
+  }
+
+  .task-field label {
+    font-size: 1rem; /* Reduce font size for labels */
+  }
+
+  /* Music Page */
+  .muzic-container {
+    width: 100%; /* Ensure container takes full width */
+    padding: 0.1rem; /* Reduce padding */
+  }
+
+  .mood-selector {
+    flex-direction: column; /* Stack mood selector buttons vertically */
+    gap: 10px; /* Add space between buttons */
+  }
+
+  .mood-songs {
+    width: 100%; /* Ensure mood songs section takes full width */
+  }
+
+  .mood-songs h3 {
+    font-size: 1.2rem; /* Reduce font size for headings */
+  }
+
+  .mood-songs li {
+    width: 100%; /* Ensure list items take full width */
+    box-sizing: border-box; /* Include padding and border in width calculation */
+  }
+
+  /* Community Page */
+  .community-container {
+    padding: 1rem;
+    width: 100%;
+  }
+
+  .post-card {
+    width: 100%; /* Ensure post cards take full width */
+    box-sizing: border-box; /* Include padding and border in width calculation */
+    word-wrap: break-word; /* Break long words to prevent overflow */
+  }
+
+  .post-card h3 {
+    font-size: 1.2rem; /* Reduce font size for post headings */
+  }
+
+  .post-card p {
+    font-size: 0.9rem; /* Reduce font size for post text */
+  }
+
+  .create-post {
+    padding: 10px;
+  }
+
+  .create-post h3 {
+    font-size: 1.2rem;
+  }
+
+  .create-post label {
+    font-size: 1rem;
+  }
+
+  .submit-post-button {
+    padding: 8px;
+    font-size: 0.9rem;
+  }
+
+  /* Dashboard Page */
+  .dashboard-container {
+    width: 100%; /* Ensure container takes full width */
+    padding: 0.1rem; /* Reduce padding */
+  }
+
+  .stats {
+    flex-direction: column; /* Stack stats vertically */
+    gap: 10px; /* Add space between stats */
+  }
+
+  .stat {
+    width: 100%; /* Ensure stat cards take full width */
+    box-sizing: border-box; /* Include padding and border in width calculation */
+  }
+
+  .stat h3 {
+    font-size: 1.5rem; /* Reduce font size for stat headings */
+  }
+
+  .recent-activities {
+    width: 100%; /* Ensure recent activities take full width */
+  }
+
+  .activity {
+    width: 100%; /* Ensure activity cards take full width */
+    box-sizing: border-box; /* Include padding and border in width calculation */
+  }
+
+  .activity h4 {
+    font-size: 1.2rem; /* Reduce font size for activity headings */
+  }
+
+  .activity p {
+    font-size: 0.9rem; /* Reduce font size for activity text */
+  }
+
+  /* Chatbox Page */
+  .chatbox-container {
+    padding: 1rem; /* Reduce padding */
+  }
+
+  .chat-window {
+    width: 95%; /* Make chat window slightly narrower */
+    max-width: 100%; /* Ensure it doesn't exceed screen width */
+    box-sizing: border-box; /* Include padding and border in width calculation */
+  }
+
+  .chat-input {
+    width: 90%; /* Make input field narrower */
+    max-width: 100%; /* Ensure it doesn't exceed screen width */
+  }
+
+  .send-button {
+    width: auto; /* Allow button to adjust its width */
+    padding: 8px 12px; /* Adjust padding */
+  }
+
+  .message {
+    padding: 8px;
+    font-size: 0.9rem;
+  }
+
+}

@@ -33,3 +33,32 @@
     color: #ff00ff;
   }
   
+  /* Mobile-friendly styles for Header */
+@media (max-width: 768px) {
+  /* Header */
+  .retro-header {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    text-align: center; /* Center text within the header */
+    padding: 1rem; /* Reduce padding */
+  }
+
+  .logo {
+    font-size: 1.2rem; /* Reduce logo size */
+    margin-bottom: 1rem; /* Add space below the logo */
+  }
+
+  .nav-links ul {
+    flex-direction: column; /* Stack nav links vertically */
+    gap: 10px; /* Add space between links */
+    align-items: center; /* Center the navigation links */
+  }
+
+  .nav-links li {
+    margin-left: 0; /* Remove left margin */
+  }
+
+  .nav-links li a {
+    font-size: 0.9rem; /* Reduce font size for links */
+  }
+}
