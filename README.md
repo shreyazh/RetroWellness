@@ -1,5 +1,5 @@
 # [RetroWellness](https://retro-wellness.vercel.app) 🕹️  
-**Hackathon Project | Hack the Future: AI & Open Source Hackathon**  
+**1st Prize Winning Hackathon Project | Hack the Future: AI & Open Source Hackathon**  
 
 RetroWellness is a mental health-focused web application designed with a nostalgic retro theme. It aims to support users in managing their mental well-being through personalized plans, interactive tools, and community support, all while bringing a fun and engaging user experience.
 
